@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-#Dispays content of file etc/passwd
-#displays the usrname, userid, and user homedir path for the user
+#Dispays content of file /etc/passwd
+#only displays the usrname, user id, and user homedir path for the user
 
 while read passwd; do
  echo "$passwd" | cut -d ':' -f1,3,6
